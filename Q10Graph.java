@@ -38,6 +38,7 @@ public class Q10Graph {
         Map<String, List<Road>> roads = new HashMap<>();
 
         public void addRoad(String from, String to, double toll, double traffic) {
+            System.out.println("From: "+from+" -> "+to+", Toll: "+toll+", Traffic: "+traffic);
             roads.putIfAbsent(from, new ArrayList<>());
             roads.get(from).add(new Road(to, toll, traffic));
         }
