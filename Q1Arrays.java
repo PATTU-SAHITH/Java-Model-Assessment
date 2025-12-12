@@ -78,7 +78,7 @@ class Q1Arrays{
     public static void main(String[] args) {
         int[] route1 = {4, 2, 1, 7, 8, 1, 2, 8, 1, 0};
         int minTrip = 4;
-        
+        System.out.println("1. ARRAYS - Fuel-Efficient Route Detection (Google Maps) \n");
         System.out.println("Route 1 Fuel Costs: 4, 2, 1, 7, 8, 1, 2, 8, 1, 0");
         System.out.println("Minimum Distance / k value: " + minTrip + " km");
         
