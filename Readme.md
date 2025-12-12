@@ -19,7 +19,7 @@ Each problem focuses on a core DSA concept and is implemented in a separate Java
 | **Q10Graph.java** | Graphs | Graph representation and traversal algorithms like BFS and DFS. |
 | **Model Assessment DSA Problem.pdf** | Problem Set | Contains the original assessment questions. |
 
-## 🚀 How to Run
+## 🚀 How to Run : 
 
 1. Install Java (JDK 8 or later).
 2. Clone the repository:
