@@ -3,13 +3,13 @@
 Problem:
 Design the undo/redo engine for Google Docs supporting text editing.
 Requirements:
- Handle 10,000+ operations.
- Undo stack can store only latest 50 actions (drop oldest automatically).
- Any new action clears the redo stack.
- Support two actions:
+- Handle 10,000+ operations.
+- Undo stack can store only latest 50 actions (drop oldest automatically).
+- Any new action clears the redo stack.
+- Support two actions:
 o INSERT(x)
 o DELETE(k characters)
- Return:
+- Return:
 o final document
 o total operations performed
  */

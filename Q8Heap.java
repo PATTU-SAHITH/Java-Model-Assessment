@@ -77,6 +77,7 @@ public class Q8Heap {
         }
 
         public static void main(String[] args) {
+            System.out.println("8. HEAP - YouTube Real-Time Trending Videos");
             TrendingVideos trending = new TrendingVideos();
             
             trending.updateScore(1, 50);
