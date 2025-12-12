@@ -1,15 +1,17 @@
-// LINKED LIST - Music Playlist Engine (Spotify-like) 
-// Problem: 
-// Build a playlist system with: 
-// - playNext() 
-// - playPrev() 
-// - addSong() 
-// - removeSong() 
-// - prevent duplicate songs 
-// Requirements: 
-// - All operations must run in O(1) using doubly linked list + HashSet. 
-// - Maintain a current pointer that moves dynamically. 
-// - Support exporting playlist both forward and backward.
+/*
+4. LINKED LIST - Music Playlist Engine (Spotify-like)
+Problem:
+Build a playlist system with:
+- playNext()
+- playPrev()
+- addSong()
+- removeSong()
+- prevent duplicate songs
+Requirements:
+- All operations must run in O(1) using doubly linked list + HashSet.
+- Maintain a current pointer that moves dynamically.
+- Support exporting playlist both forward and backward. 
+ */
 
 import java.util.*;
 
@@ -87,7 +89,7 @@ public class Q4LinkedList {
 
     public static void main(String[] args){
         Q4LinkedList p = new Q4LinkedList();
-        System.out.println("LINKED LIST - Music Playlist Engine (Spotify-like) \n");
+        System.out.println("4. LINKED LIST - Music Playlist Engine (Spotify-like) \n");
         p.addSong("Channa Meriya");
         p.addSong("Kesariya Thera");
         p.addSong("Kaise Hua");

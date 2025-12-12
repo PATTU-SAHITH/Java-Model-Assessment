@@ -1,5 +1,18 @@
-import java.util.*;
+/*
+6. QUEUE - Hospital Emergency Priority System
+Problem:
+Patients arrive with name, severity, and arrival time.
+Create a system to pick patients in correct priority order.
+Requirements:
+- Maintain 2 queues:
+- Critical Queue (8–10 severity)
+- Normal Queue (1–7 severity)
+- At least 1 critical patient every 5 minutes must be treated.
+- If severity is same → earlier arrival first.
+- Must support real-time updates and retrieval. 
+ */
 
+import java.util.*;
 public class Q6Queue {
     private static class Patient implements Comparable<Patient> {
         final String id;
@@ -95,6 +108,7 @@ public class Q6Queue {
     private boolean isCritical(int severity){ return severity >= 8 && severity <= 10; }
 
     public static void main(String[] args) throws Exception{
+        System.out.println("6. QUEUE - Hospital Emergency Priority System\n");
         Q6Queue q = new Q6Queue();
         long now = System.currentTimeMillis();
         q.addPatient("p1","Alice",5, now - 60000);
