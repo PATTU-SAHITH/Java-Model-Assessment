@@ -87,6 +87,7 @@ public class Q4LinkedList {
 
     public static void main(String[] args){
         Q4LinkedList p = new Q4LinkedList();
+        System.out.println("LINKED LIST - Music Playlist Engine (Spotify-like) \n");
         p.addSong("Channa Meriya");
         p.addSong("Kesariya Thera");
         p.addSong("Kaise Hua");
