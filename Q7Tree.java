@@ -1,3 +1,13 @@
+/*
+7. TREE - Lowest Common Directory in a File System 
+Problem: 
+Given a Unix-like directory tree and two file paths, 
+find the lowest common directory. 
+Requirements: 
+- Tree may have 100,000+ nodes → LCA must be O(log n) using binary 
+lifting. 
+- Convert file path /a/b/c.txt → node ID before solving. 
+- Return the full directory path of the LCA. */
 import java.util.*;
 
 public class Q7Tree {
@@ -68,6 +78,7 @@ public class Q7Tree {
     }
 
     public static void main(String[] args) {
+        System.out.println("7. TREE - Lowest Common Directory in a File System ");
         Q7Tree fs = new Q7Tree();
         String[] paths = {
             "/usr/local/bin/script.sh",

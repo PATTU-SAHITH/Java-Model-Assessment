@@ -1,3 +1,14 @@
+/*
+2.  STRINGS - Gmail Autocorrect Suggestion Engine 
+Problem: 
+Given a typed incorrect word and a dictionary of valid words, 
+find the closest valid suggestions using minimum edit distance. 
+Requirements: 
+- Dictionary size can be up to 100,000 words → must optimize. 
+- Return the top 3 closest words, not just one. 
+- Ties: return lexicographically smallest. 
+- Total computation must be < 100 ms per query. 
+*/
 import java.util.*;
 
 public class Q2Strings {
@@ -31,6 +42,7 @@ public class Q2Strings {
     }
 
     public static void main(String[] args) {
+        System.out.println("2.  STRINGS - Gmail Autocorrect Suggestion Engine ");
         List<String> dict = Arrays.asList(
                 "example","sample","simple","gmail","auto","autocorrect","correct","testing","apple","orange",
                 "banana","triangle","rectangle","examine","exemplar","exempt","temple","ripple","pineapple","ample"

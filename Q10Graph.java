@@ -98,6 +98,7 @@ public class Q10Graph {
         }
 
         public static void main(String[] args) {
+            System.out.println("10. GRAPH + DIJKSTRA - Minimum Toll Path (Google Maps)");
             CityMap map = new CityMap();
             map.addRoad("A", "B", 5, 4);
             map.addRoad("B", "C", 3, 2);

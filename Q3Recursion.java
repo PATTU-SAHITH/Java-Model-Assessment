@@ -1,3 +1,13 @@
+/*
+3. RECURSION - File Explorer Folder Size Computation 
+Problem: 
+Compute the total size of a folder that contains nested folders and files. 
+Requirements: 
+- Folder structure is a tree but may contain symbolic links → detect cycles. 
+- Use recursion + memoization to avoid recomputing sizes. 
+- Also return the largest 3 files inside the folder. 
+- No global static variables allowed.
+ */
 import java.util.*;
 
 public class Q3Recursion {
@@ -55,6 +65,7 @@ public class Q3Recursion {
     }
 
     public static void main(String[] args){
+        System.out.println("3. RECURSION - File Explorer Folder Size Computation ");
         Node a=new Node("a.txt",100);
         Node b=new Node("b.log",500);
         Node c=new Node("c.bin",200);
