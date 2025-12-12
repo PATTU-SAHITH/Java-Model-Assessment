@@ -82,9 +82,13 @@ public class Q8Heap {
             trending.updateScore(1, 50);
             trending.updateScore(2, 60);
             trending.updateScore(3, 40);
-            
-            System.out.println("Top 2 trending videos:");
-            for (Video v : trending.getTopK(2)) {
+
+            int topK = 3;
+            List<Video> Videos = trending.getTopK(topK);
+
+            System.out.println("Top "+topK+" trending videos:");
+
+            for (Video v : Videos) {
                 System.out.println("VideoID: " + v.videoID + ", Score: " + v.score);
             }
             
