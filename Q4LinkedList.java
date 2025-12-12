@@ -1,15 +1,15 @@
 // LINKED LIST - Music Playlist Engine (Spotify-like) 
 // Problem: 
 // Build a playlist system with: 
-//  playNext() 
-//  playPrev() 
-//  addSong() 
-//  removeSong() 
-//  prevent duplicate songs 
+// - playNext() 
+// - playPrev() 
+// - addSong() 
+// - removeSong() 
+// - prevent duplicate songs 
 // Requirements: 
-//  All operations must run in O(1) using doubly linked list + HashSet. 
-//  Maintain a current pointer that moves dynamically. 
-//  Support exporting playlist both forward and backward.
+// - All operations must run in O(1) using doubly linked list + HashSet. 
+// - Maintain a current pointer that moves dynamically. 
+// - Support exporting playlist both forward and backward.
 
 import java.util.*;
 
@@ -40,6 +40,7 @@ public class Q4LinkedList {
         }
         set.add(id);
         map.put(id, n);
+        System.out.println(id + " added to Playlist");
         return true;
     }
 
@@ -56,13 +57,14 @@ public class Q4LinkedList {
         n.prev = n.next = null;
         set.remove(id);
         map.remove(id);
+        System.out.println("Removed "+ id);
         if(head == null) current = null;
         return true;
     }
 
     public String playNext(){
-        if(current == null) return null;
-        if(current.next == null) return null;
+        if(current == null) return "No Songs in PLaylist";
+        if(current.next == null) return "No Songs in PLaylist";
         current = current.next;
         return current.id;
     }
@@ -74,25 +76,6 @@ public class Q4LinkedList {
         return current.id;
     }
 
-    public List<String> exportForward(){
-        List<String> out = new ArrayList<>();
-        Node p = head;
-        while(p != null){
-            out.add(p.id);
-            p = p.next;
-        }
-        return out;
-    }
-
-    public List<String> exportBackward(){
-        List<String> out = new ArrayList<>();
-        Node p = tail;
-        while(p != null){
-            out.add(p.id);
-            p = p.prev;
-        }
-        return out;
-    }
 
     public String getCurrent(){
         return current == null ? null : current.id;
@@ -104,17 +87,15 @@ public class Q4LinkedList {
 
     public static void main(String[] args){
         Q4LinkedList p = new Q4LinkedList();
-        p.addSong("s1");
-        p.addSong("s2");
-        p.addSong("s3");
+        p.addSong("Channa Meriya");
+        p.addSong("Kesariya Thera");
+        p.addSong("Kaise Hua");
         System.out.println(p.getCurrent());
         System.out.println(p.playNext());
         System.out.println(p.playNext());
         System.out.println(p.playNext());
         p.playPrev();
         System.out.println(p.getCurrent());
-        p.removeSong("s2");
-        System.out.println(p.exportForward());
-        System.out.println(p.exportBackward());
+        p.removeSong("Kaise Hua");
     }
 }
